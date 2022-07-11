@@ -14,15 +14,15 @@ import './App.scss'
 const App = () => {
   return (
     <>
-        <Header/>
-        <Nav/>
-        <About/>
-        <Coordinates/>
-        <Experience/>
-        <Portfolio/>
-        <Hobbies/>
-        <Contact/>
-        <Footer/>
+      <Header />
+      <Nav />
+      <About />
+      <Coordinates />
+      <Experience />
+      <Portfolio />
+      <Hobbies />
+      <Contact />
+      <Footer />
     </>
   );
 };

@@ -17,10 +17,10 @@ import Vitrine3 from '../assets/image/vitrine/vitrine-3.png';
 import Vitrine4 from '../assets/image/vitrine/vitrine-4.png';
 
 export const Irc = [
-    { img:IRC },
-    { img:IRC2 },
-    { img:IRC3 },
-    { img:IRC4 },
+    { img: IRC },
+    { img: IRC2 },
+    { img: IRC3 },
+    { img: IRC4 },
 ];
 
 export const ModelResponsiveImg = [
@@ -30,14 +30,14 @@ export const ModelResponsiveImg = [
 ];
 
 export const BattleshipImg = [
-    { img:Battleship },
-    { img:Battleship2 },
-    { img:Battleship3 },
-    { img:Battleship4 },
+    { img: Battleship },
+    { img: Battleship2 },
+    { img: Battleship3 },
+    { img: Battleship4 },
 ];
 
 export const VitrineImg = [
-    { img:Vitrine },
-    { img:Vitrine3 },
-    { img:Vitrine4 },
+    { img: Vitrine },
+    { img: Vitrine3 },
+    { img: Vitrine4 },
 ];

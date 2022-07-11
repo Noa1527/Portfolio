@@ -1,0 +1,166 @@
+@import "../../App.scss";
+
+.section-experience {
+    background-color: $color-1;
+}
+
+.col-xp {
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 27px;
+    text-align: start;
+
+    .studies {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .degres,
+        .experience,
+        .formation,
+        .training {
+            text-align: start;
+            width: 50%;
+            height: 400px;
+            background: #f5F5F5;
+
+            &.degres {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 10px;
+            }
+
+            &.experience {
+                width: 90%;
+                height: 600px
+            }
+
+            &.training {
+                width: 70%;
+                height: 650px
+            }
+
+            .training-img {
+                height: 50%;
+                padding: 10px 10px 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            .training-text {
+                padding: 5px;
+                text-align: center;
+            }
+
+            .work-boxes {
+                display: flex;
+                align-items: center;
+                margin: 11px;
+
+                p {
+                    padding: 5px;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+
+    .box-experiences,
+    .box-skills {
+        border: 1px solid rgba($color: #333333, $alpha: 0.3);
+        box-shadow: 1px 2px 3px;
+        background: #f5F5F5;
+        border-radius: 0.3rem;
+        height: 180px;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 400ms ease;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+
+        &:hover {
+            background-color: $text-color;
+            box-shadow: none;
+            border-color: #3333;
+            color: $color-1;
+        }
+    }
+    .skills {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        .skills-front-end,
+        .skills-back-end {
+            background-color: #f5F5F5;
+            padding: 10px;
+            height: 50%;
+            width: 70%;
+            h3{
+                margin-left: 5px;
+                margin-bottom: 10px;
+                font-size: 2.5rem;
+
+            }
+            .skills-content {
+                display: flex;
+                justify-content: space-between;
+
+                .skills-detailS {
+                    margin: 10px;
+                }
+            }
+        }
+        .skills-back-end{
+            height: 50%;
+            h3{
+                text-align: center;
+            }
+            .skills-content{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        .skills-full-stack{
+            background-color: #f5F5F5;
+            padding: 10px;
+            height: 60%;
+            width: 70%;
+            h3{
+                margin-left: 5px;
+                margin-bottom: 10px;
+                font-size: 2.5rem;
+                text-align: center;
+
+            }
+            .skills-content {
+                display: flex;
+                justify-content: center;
+
+                .skills-detailS {
+                    margin: 20px;
+                    display: flex;
+                    h4{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .col-xp {
+        margin-bottom: 30px;
+        padding-bottom: 40px;
+    }
+
+    .skills {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+}

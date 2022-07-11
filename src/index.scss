@@ -1,0 +1,125 @@
+@import './App.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  background-color: #f5f5f5;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font: 300 11px/1.4 "Helvetica Neue", "sans-serif";
+  color: #5b5963;
+  background-color: #fff;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+.module-header {
+  margin-bottom: 50px;
+  text-align: center;
+
+  .module-title {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: $text-color;
+
+    .module-sub {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -40px;
+      text-align: center;
+      opacity: 0.05;
+      font-weight: 700;
+    }
+  }
+
+  .module-line {
+    background: $text-color;
+    width: 55px;
+    height: 1px;
+    margin: 30px auto;
+  }
+
+}
+
+/* ======================== GENRAL STYLE ======================== */
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: $container-width-lg;
+  padding: 3rem 0.5rem 0;
+  margin: 0 auto;
+}
+
+/* ======================== MEDIA QUERIES (MEDIUM DEVICES) ======================== */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: $container-width-md;
+    padding: 1rem 0.5rem 0;
+  }
+}
+
+/* ======================== MEDIA QUERIES (SMALL DEVICES) ======================== */
+@media screen and (max-width: 600px) {
+  section {
+    height: auto;
+  }
+
+  .container {
+    width: $container-width-sm;
+  }
+
+  .module-header {
+
+    .module-title {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 20px;
+
+      .module-sub {
+        margin-top: 15px;
+        font-size: 50px;
+      }
+    }
+  }
+}

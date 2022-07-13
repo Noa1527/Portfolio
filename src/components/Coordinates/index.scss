@@ -44,3 +44,19 @@
         }
     }
 }
+
+@media screen and (max-width: 375px) {
+    .row {
+        .col {
+            .box-flex {
+                display: block;
+            }
+
+            .coordinate,
+            .coordinate2,
+            .search-for{
+                font-size: 15px;
+            }
+        }
+    }
+}

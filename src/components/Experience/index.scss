@@ -164,3 +164,32 @@
         padding-bottom: 40px;
     }
 }
+@media screen and (max-width: 375px) {
+    .studies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .col-xp {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 40px;
+    }
+
+    .skills {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+
+        .skills-front-end,
+        .skills-back-end,
+        .skills-full-stack{
+            width: 100%;
+        }
+    }
+
+}

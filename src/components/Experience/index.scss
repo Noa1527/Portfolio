@@ -89,6 +89,7 @@
             color: $color-1;
         }
     }
+
     .skills {
         margin-top: 40px;
         display: flex;
@@ -100,12 +101,14 @@
             padding: 10px;
             height: 50%;
             width: 70%;
-            h3{
+
+            h3 {
                 margin-left: 5px;
                 margin-bottom: 10px;
                 font-size: 2.5rem;
 
             }
+
             .skills-content {
                 display: flex;
                 justify-content: space-between;
@@ -115,28 +118,34 @@
                 }
             }
         }
-        .skills-back-end{
+
+        .skills-back-end {
             height: 50%;
-            h3{
+
+            h3 {
                 text-align: center;
             }
-            .skills-content{
+
+            .skills-content {
                 display: flex;
                 justify-content: space-around;
             }
         }
-        .skills-full-stack{
+
+        .skills-full-stack {
             background-color: #f5F5F5;
             padding: 10px;
             height: 60%;
             width: 70%;
-            h3{
+
+            h3 {
                 margin-left: 5px;
                 margin-bottom: 10px;
                 font-size: 2.5rem;
                 text-align: center;
 
             }
+
             .skills-content {
                 display: flex;
                 justify-content: center;
@@ -144,7 +153,8 @@
                 .skills-detailS {
                     margin: 20px;
                     display: flex;
-                    h4{
+
+                    h4 {
                         margin-left: 10px;
                     }
                 }
@@ -164,13 +174,21 @@
         padding-bottom: 40px;
     }
 }
+
 @media screen and (max-width: 375px) {
     .studies {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 10px;
+        .box-experiences{
+            margin: 10px auto;
+            width: 70%;
+            height: auto;
+        }
     }
+
+    
     .col-xp {
         width: 100%;
         margin-bottom: 30px;
@@ -178,6 +196,12 @@
     }
 
     .skills {
+        .box-skills {
+            margin: 10px auto;
+            width: 70%;
+            height: auto;
+        }
+    
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -187,9 +211,10 @@
 
         .skills-front-end,
         .skills-back-end,
-        .skills-full-stack{
+        .skills-full-stack {
             width: 100%;
         }
     }
+
 
 }

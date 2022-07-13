@@ -129,19 +129,12 @@ section {
     height: auto;
   }
 
-  .container {
-    width: $container-width-sm;
-  }
-
   .module-header {
 
     .module-title {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 20px;
-
+      
       .module-sub {
-        margin-top: 15px;
+        
         font-size: 35px;
       }
     }

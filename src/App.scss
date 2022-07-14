@@ -37,12 +37,12 @@ textarea{
     background-image: url('./assets/image/mika.jpg');
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 100vh;
-    width: 100vw;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
-@media screen and (max-width: 600px) {
-    .picture{
-        height: auto;
-    }
-}
+// @media screen and (max-width: 600px) {
+//     .picture{
+//         height: auto;
+//     }
+// }

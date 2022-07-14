@@ -44,28 +44,35 @@ h5 {
   font-weight: 500;
 }
 
+section {
+  width: 100%;
+  height: auto;
+}
+
+
 .module-header {
   margin-bottom: 50px;
   text-align: center;
 
   .module-title {
     position: relative;
-    margin-top: 50px;
+    padding-top: 50px;
     margin-bottom: 50px;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: $text-color;
 
     .module-sub {
-      font-size: 100px;
+      font-size: 30px;
       position: absolute;
+      margin-top: 15px;
       left: 0;
       right: 0;
-      top: -40px;
+      top: 9px;
       text-align: center;
-      opacity: 0.05;
+      opacity: 0.09;
       font-weight: 700;
     }
   }
@@ -79,64 +86,104 @@ h5 {
 
 }
 
-/* ======================== GENRAL STYLE ======================== */
-section {
-  width: 100vw;
-  height: 100vh;
-}
+/*
+page grand ecrant
+*/
 
-.container {
-  width: $container-width-lg;
-  padding: 3rem 0.5rem 0;
-  margin: 0 auto;
-}
 
-/* ======================== MEDIA QUERIES (MEDIUM DEVICES) ======================== */
-@media screen and (max-width: 1024px) {
-  .container {
-    width: $container-width-md;
-    padding: 1rem 0.5rem 0;
-  }
-}
+// .module-header {
+//   margin-bottom: 50px;
+//   text-align: center;
 
-/* ======================== MEDIA QUERIES (SMALL DEVICES) ======================== */
-@media screen and (max-width: 600px) {
-  section {
-    height: auto;
-  }
+//   .module-title {
+//     position: relative;
+//     margin-top: 50px;
+//     margin-bottom: 50px;
+//     font-weight: 300;
+//     font-size: 40px;
+//     text-transform: uppercase;
+//     letter-spacing: 5px;
+//     color: $text-color;
 
-  .container {
-    width: $container-width-sm;
-  }
+//     .module-sub {
+//       font-size: 100px;
+//       position: absolute;
+//       left: 0;
+//       right: 0;
+//       top: -40px;
+//       text-align: center;
+//       opacity: 0.05;
+//       font-weight: 700;
+//     }
+//   }
 
-  .module-header {
+//   .module-line {
+//     background: $text-color;
+//     width: 55px;
+//     height: 1px;
+//     margin: 30px auto;
+//   }
 
-    .module-title {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 20px;
+// }
 
-      .module-sub {
-        margin-top: 15px;
-        font-size: 50px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 375px) {
-  section {
-    width: 100%;
-    height: auto;
-  }
+// /* ======================== GENRAL STYLE ======================== */
+// section {
+//   width: 100vw;
+//   height: 100vh;
+// }
 
-  .module-header {
+// .container {
+//   width: $container-width-lg;
+//   padding: 3rem 0.5rem 0;
+//   margin: 0 auto;
+// }
 
-    .module-title {
-      
-      .module-sub {
-        
-        font-size: 35px;
-      }
-    }
-  }
-}
+// /* ======================== MEDIA QUERIES (MEDIUM DEVICES) ======================== */
+// @media screen and (max-width: 1024px) {
+//   .container {
+//     width: $container-width-md;
+//     padding: 1rem 0.5rem 0;
+//   }
+// }
+
+// /* ======================== MEDIA QUERIES (SMALL DEVICES) ======================== */
+// @media screen and (max-width: 600px) {
+//   section {
+//     height: auto;
+//   }
+
+//   .container {
+//     width: $container-width-sm;
+//   }
+
+//   .module-header {
+
+//     .module-title {
+//       margin-top: 20px;
+//       margin-bottom: 20px;
+//       font-size: 20px;
+
+//       .module-sub {
+//         margin-top: 15px;
+//         font-size: 50px;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 375px) {
+//   section {
+//     width: 100%;
+//     height: auto;
+//   }
+
+//   .module-header {
+
+//     .module-title {
+
+//       .module-sub {
+
+//         font-size: 35px;
+//       }
+//     }
+//   }
+// }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.scss';
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 
 const Footer = () => {
@@ -23,6 +24,8 @@ const Footer = () => {
                     <a href="https://www.facebook.com/profile.php?id=100009839855698"><FaFacebookF/></a>
                     <a href="https://www.instagram.com/mickaelraveneau/tagged/?hl=fr"><FaInstagram/></a>
                     <a href="https://twitter.com/Miki97697052"><FaTwitter/></a>
+                    <a href="https://www.linkedin.com/in/mickaël-raveneau/"><BsLinkedin/></a>
+                    <a href="https://github.com/Noa1527"><BsGithub/></a>
                 </div>
 
                 <div className="footer-copyright">

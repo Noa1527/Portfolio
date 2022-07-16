@@ -6,21 +6,20 @@
 
 .row {
     .col {
-        width: $container-width-lg;
+        width: $container-width-sm;
         margin: 0 auto;
 
         .box-flex {
-            display: flex;
-            justify-content: space-between;
+            display: block;
         }
 
         .coordinate,
         .coordinate2,
         .search-for {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             font-weight: 400;
             line-height: 1.4;
-            font-size: 22px;
+            font-size: 15px;
             text-align: start;
 
             &.search-for {
@@ -35,28 +34,61 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     .row {
         .col {
             .box-flex {
-                display: block;
+                display: flex;
+                justify-content: space-between;
             }
         }
     }
 }
+// .row {
+//     .col {
+//         width: $container-width-lg;
+//         margin: 0 auto;
 
-@media screen and (max-width: 375px) {
-    .row {
-        .col {
-            .box-flex {
-                display: block;
-            }
+//         .box-flex {
+//             display: flex;
+//             justify-content: space-between;
+//         }
 
-            .coordinate,
-            .coordinate2,
-            .search-for{
-                font-size: 15px;
-            }
-        }
-    }
-}
+//         .coordinate,
+//         .coordinate2,
+//         .search-for {
+//             margin-bottom: 20px;
+//             font-weight: 400;
+//             line-height: 1.4;
+//             font-size: 22px;
+//             text-align: start;
+
+//             &.search-for {
+//                 text-align: center;
+
+//                 strong {
+//                     padding: 5px;
+//                     text-align: center;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+// @media screen and (max-width: 375px) {
+//     .row {
+//         .col {
+//             .box-flex {
+//                 display: block;
+//             }
+
+//             .coordinate,
+//             .coordinate2,
+//             .search-for{
+//                 font-size: 15px;
+//             }
+//         }
+//     }
+// }

@@ -49,6 +49,48 @@
     }
 }
 
+/* ======================== MEDIA QUERIES (SMALL DEVICES) ======================== */
+
+@media screen and (min-width: 600px) {
+    section {
+        height: auto;
+    }
+
+    .container {
+        width: $container-width-sm;
+        padding: 0;
+        margin: auto;
+    }
+
+    .row {
+        .col {
+            .presentation{
+
+                margin-bottom: 0;
+            }
+            .temper{
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 5px 10px;
+                strong {
+
+                    width: 50%;
+                    margin-top: 5px;
+                }
+            }
+            .quote {
+
+                padding: 10px;
+                margin-top: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+}
 /*
 page grand ecrant
 */

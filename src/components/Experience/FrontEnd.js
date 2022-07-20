@@ -27,7 +27,7 @@ const FrontEnd = () => {
 				<div className="content-2">
 					<article className='skills-detailS'>
 						<BsCheckSquare />
-						<h4>bootstrap<FaBootstrap /></h4>
+						<h4>Bootstrap<FaBootstrap /></h4>
 					</article>
 					<article className='skills-detailS'>
 						<BsCheckSquare />

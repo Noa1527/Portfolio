@@ -4,8 +4,9 @@ import IRC3 from '../assets/image/irc/IRC-3.jpeg';
 import IRC4 from '../assets/image/irc/IRC-4.jpeg';
 
 import Responsive from '../assets/image/responsive/responsive.png';
-import Model2 from '../assets/image/responsive/responsive-2.png';
-import Model3 from '../assets/image/responsive/responsive-3.png';
+import Responsive2 from '../assets/image/responsive/responsive-2.png';
+import Responsive4 from '../assets/image/responsive/responsive-4.png';
+import Responsive5 from '../assets/image/responsive/responsive-5.png';
 
 import Battleship from '../assets/image/battleship/Battleship.jpeg';
 import Battleship2 from '../assets/image/battleship/Battleship-2.png';
@@ -25,8 +26,9 @@ export const Irc = [
 
 export const ModelResponsiveImg = [
     { img: Responsive },
-    { img: Model2 },
-    { img: Model3 },
+    { img: Responsive2 },
+    { img: Responsive4 },
+    { img: Responsive5 },
 ];
 
 export const BattleshipImg = [

@@ -167,7 +167,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className='footer-popup'>
                                         <div className='border'></div>
-                                        <a className=' btn' href="https://github.com/Noa1527/irc" target={'_blank'}>Voir la maquette</a>
+                                        <a className=' btn' href="https://62d7ddd12d20e531e08596bc--stellar-chebakia-bcc3db.netlify.app" target={'_blank'}>Voir la maquette</a>
                                     </div>
                                 </article>
                             </Modal>

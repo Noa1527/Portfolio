@@ -22,25 +22,27 @@
         .formation,
         .training {
             text-align: start;
-            width: 50%;
+            width: 100%;
             height: 400px;
-            background: #f5F5F5;
+            font-size: 18px;
+            margin: 0 auto;
 
             &.degres {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                padding: 10px;
             }
 
             &.experience {
-                width: 90%;
-                height: 600px
+                width: 100%;
+                height: 100%;
+                overflow-y: scroll;
             }
 
             &.training {
-                width: 70%;
-                height: 650px
+                width: 100%;
+                height: 650px;
+                overflow-y: scroll;
             }
 
             .training-img {
@@ -48,6 +50,11 @@
                 padding: 10px 10px 0;
                 display: flex;
                 justify-content: center;
+
+                img {
+                    width: 90%;
+                    height: 70%;
+                }
             }
 
             .training-text {
@@ -56,9 +63,14 @@
             }
 
             .work-boxes {
-                display: flex;
-                align-items: center;
+                // display: flex;
+                // align-items: center;
                 margin: 11px;
+
+                img {
+                    width: 100%;
+                    height: 100px;
+                }
 
                 p {
                     padding: 5px;
@@ -72,7 +84,6 @@
     .box-skills {
         border: 1px solid rgba($color: #333333, $alpha: 0.3);
         box-shadow: 1px 2px 3px;
-        background: #f5F5F5;
         border-radius: 0.3rem;
         display: flex;
         align-items: center;
@@ -102,65 +113,269 @@
 
         .skills-front-end,
         .skills-back-end {
-            background-color: #f5F5F5;
-            padding: 10px;
-            height: 50%;
-            width: 70%;
+            // padding: 10px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             h3 {
                 margin-left: 5px;
                 margin-bottom: 10px;
-                font-size: 2.5rem;
+                font-size: 1.5rem;
 
             }
 
             .skills-content {
-                display: flex;
-                justify-content: space-between;
+                margin-top: 100px;
+                // display: flex;
+                // justify-content: space-between;
 
                 .skills-detailS {
                     margin: 10px;
+
+                    svg {
+                        display: none;
+                    }
+
+                    h4 {
+                        margin: 20px 5px;
+                    }
                 }
             }
         }
 
         .skills-back-end {
-            height: 50%;
+            // height: 50%;
 
             h3 {
                 text-align: center;
             }
 
             .skills-content {
-                display: flex;
-                justify-content: space-around;
+
+                // display: flex;
+                // justify-content: space-around;
             }
         }
 
         .skills-full-stack {
-            background-color: #f5F5F5;
-            padding: 10px;
-            height: 60%;
-            width: 70%;
+            // padding: 10px;
+            // height: 60%;
+            // width: 70%;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             h3 {
                 margin-left: 5px;
                 margin-bottom: 10px;
-                font-size: 2.5rem;
+                font-size: 1.5rem;
                 text-align: center;
 
             }
 
             .skills-content {
+                margin-top: 100px;
                 display: flex;
                 justify-content: center;
 
                 .skills-detailS {
-                    margin: 20px;
+                    margin: 10px;
                     display: flex;
 
+                    svg {
+                        display: none;
+                    }
+
                     h4 {
-                        margin-left: 10px;
+                        margin: 20px 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .col-xp {
+
+
+        .studies {
+
+
+            .degres,
+            .experience,
+            .formation,
+            .training {
+                text-align: start;
+                width: 50%;
+                height: 400px;
+                font-size: 25px;
+                margin: 0 auto;
+
+                &.degres {
+                    padding: 10px;
+                }
+
+                &.experience {
+                    width: 90%;
+                    height: 600px;
+                }
+
+                &.training {
+                    width: 70%;
+                    height: 650px;
+                }
+
+                .training-img {
+                    height: 50%;
+                    padding: 10px 10px 0;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 90%;
+                        height: 70%;
+                    }
+                }
+
+                .training-text {
+                    padding: 5px;
+                    text-align: center;
+                }
+
+                .work-boxes {
+                    // display: flex;
+                    // align-items: center;
+                    margin: 11px;
+
+                    img {
+                        width: 100%;
+                        height: 100px;
+                    }
+
+                    p {
+                        padding: 5px;
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+
+        .box-experiences,
+        .box-skills {
+            border: 1px solid rgba($color: #333333, $alpha: 0.3);
+            box-shadow: 1px 2px 3px;
+            border-radius: 0.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 400ms ease;
+            padding: 10px;
+            text-align: center;
+            margin: 10px auto;
+            width: 70%;
+            height: auto;
+
+            &:hover {
+                background-color: $text-color;
+                box-shadow: none;
+                border-color: #3333;
+                color: $color-1;
+            }
+        }
+
+        .skills {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 30px;
+
+            .skills-front-end,
+            .skills-back-end {
+                // padding: 10px;
+                height: 100%;
+                width: 100%;
+
+                h3 {
+                    margin-left: 5px;
+                    margin-bottom: 10px;
+                    font-size: 1.5rem;
+
+                }
+
+                .skills-content {
+                    margin-top: 100px;
+                    // display: flex;
+                    // justify-content: space-between;
+
+                    .skills-detailS {
+                        margin: 10px;
+
+                        svg {
+                            display: none;
+                        }
+
+                        h4 {
+                            margin: 20px 5px;
+                        }
+                    }
+                }
+            }
+
+            .skills-back-end {
+                // height: 50%;
+
+                h3 {
+                    text-align: center;
+                }
+
+                .skills-content {
+
+                    // display: flex;
+                    // justify-content: space-around;
+                }
+            }
+
+            .skills-full-stack {
+                // padding: 10px;
+                // height: 60%;
+                // width: 70%;
+                height: 100%;
+                width: 100%;
+
+                h3 {
+                    margin-left: 5px;
+                    margin-bottom: 10px;
+                    font-size: 1.5rem;
+                    text-align: center;
+
+                }
+
+                .skills-content {
+                    margin-top: 100px;
+                    display: flex;
+                    justify-content: center;
+
+                    .skills-detailS {
+                        margin: 10px;
+                        display: flex;
+
+                        svg {
+                            display: none;
+                        }
+
+                        h4 {
+                            margin: 20px 5px;
+                        }
                     }
                 }
             }

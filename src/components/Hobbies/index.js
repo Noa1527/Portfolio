@@ -138,7 +138,7 @@ const Hobbies = () => {
                             </p>
                         </div>
                         <Modal ref={modalRefLanguage}>
-                            <div>
+                            <div className='scrolling-img'>
                                 <p className="text-canada">
                                     Je suis parti pendant deux ans au Canada
                                 </p>

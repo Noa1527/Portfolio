@@ -78,6 +78,7 @@
 
     .article-popup {
         height: 100%;
+        overflow-y: scroll;
 
         .header-popup {
             height: 10%;
@@ -101,20 +102,28 @@
         }
 
         .caroussel-popup {
-            height: 50%;
+            height: 20%;
             display: flex;
             justify-content: center;
             align-items: center;
+
         }
 
         .info-popup {
-            height: 30%;
+            height: 100%;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .techno-used {
-                width: 50%;
+                width: 100%;
                 margin-top: 20px;
                 padding: 0 20px;
+
+                svg {
+                    display: none;
+                }
 
                 .border {
                     width: 100%;
@@ -285,7 +294,7 @@
 
         .article-popup {
             height: 100%;
-
+            overflow-y:hidden;
             .header-popup {
                 height: 10%;
                 text-align: center;
@@ -307,7 +316,7 @@
             }
 
             .caroussel-popup {
-                height: 50%;
+                height: 45%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -316,11 +325,17 @@
             .info-popup {
                 height: 30%;
                 display: flex;
+                flex-direction: row;
 
                 .techno-used {
                     width: 50%;
                     margin-top: 20px;
                     padding: 0 20px;
+
+                    svg {
+                        display: block;
+                        padding-left:5px;
+                    }
 
                     .border {
                         width: 100%;
@@ -330,11 +345,20 @@
                     }
 
                     .skills-details {
+
                         ul {
-                            padding-left: 30px;
+                            padding-left: 10px;
+                            width: 70%;
+                            margin: 0 auto;
 
                             li {
                                 list-style: disc;
+
+                                h5 {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
 
                                 abbr {
                                     border-bottom: 1px dotted #777;
@@ -347,8 +371,8 @@
 
             .footer-popup {
                 height: 10%;
-                display: flex;
-                flex-direction: column;
+                // display: flex;
+                // flex-direction: column;
 
                 .border {
                     width: 100%;

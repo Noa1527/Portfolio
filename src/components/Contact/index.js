@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsWhatsapp } from 'react-icons/bs';
@@ -7,10 +7,10 @@ import './index.scss';
 
 const Contact = () => {
     const form = useRef();
-    useEffect(() => {
-        // Met à jour le titre du document via l’API du navigateur
-        document.title = `Vous avez bien envoyez votre mail`;
-    });
+    // useEffect(() => {
+    //     // Met à jour le titre du document via l’API du navigateur
+    //     document.title = `Vous avez bien envoyez votre mail`;
+    // });
     const sendEmail = (e) => {
         e.preventDefault();
 
